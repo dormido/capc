@@ -1,0 +1,40 @@
+ALCOHOL PURO INGERIDO = graduacion * cantidad ingerida (ml) * 0,80
+                            -------------------------------------
+                                             100
+
+
+    GRADO DE ALCOHOLEMIA(g/L) (ALCOHOL EN SANGRE) =       API
+                           -----------------
+                              k * peso(kg)  
+
+
+
+K = 0,7 hombres
+    0.6 mujeres
+
+
+
+DATOS QUE TENGO: API, PESO, GDA, K, 
+
+
+TASA ALCHOOL MAX: 0,5 g/L
+                  0,3 g/L
+
+
+
+                  0,5 = API
+                        -----
+                        k * peso                                                                    
+
+
+
+
+                        GDA * K * PESO * 100
+                       ---------------------- = cantidadalcoholingerida * graduacion 
+                                0,8
+
+
+
+VARIABLES -> tam (TASA MAXIMA ALCOHOLEMIA)  , genero (k), peso, constantecien, constantedensidad
+
+variables -> gender, tam, weight, hundred, density
