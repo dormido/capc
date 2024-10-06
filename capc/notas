@@ -31,10 +31,19 @@ TASA ALCHOOL MAX: 0,5 g/L
 
                         GDA * K * PESO * 100
                        ---------------------- = cantidadalcoholingerida * graduacion 
-                                0,8
+                                0,8                (500ml, 30cl, etc...)   (5%, 11%)
 
 
 
 VARIABLES -> tam (TASA MAXIMA ALCOHOLEMIA)  , genero (k), peso, constantecien, constantedensidad
 
 variables -> gender, tam, weight, hundred, density
+
+
+DESPUES DEL CALCULO: OPCIONES --> 2 MEDIANAS CERVEZA Y UN CHUPITO VODKA
+                                4 COPITAS DE VINO
+                                3 chupitos de vino
+
+
+
+A ESCOGER: que bebes? --> cerveza, vino, vodka, 

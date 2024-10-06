@@ -24,12 +24,14 @@ def main():
     weight = float(input())
     print(messages["tam"])
     tam = int(input())
+    print(messages["drink"])
+    drink = int(input())
 
-    k, tma, wh = data(gender, weight, tam)  # Obtener k, tma y peso
+    k, tma, wh, grad = data(gender, weight, tam, drink)  
     
     hundred = 100
     density = 0.8
-    cai = calc(tma, k, wh, hundred, density)
+    cai = calc(tma, k, wh, hundred, density, grad)
 
     # Imprime el resultado
     print(cai)
