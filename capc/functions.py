@@ -1,5 +1,6 @@
 import os, sys
 
+
 def get_translations(language):
     translations = {
     "es": {
@@ -22,5 +23,21 @@ def get_translations(language):
 
 
 def data(gender, weight, tam):
-    if gender == 1 or 4:
-        k = 0,7
+    if gender == 1 or gender == 4:
+        k = 0.7
+    elif gender == 2 or gender == 3:
+        k = 0.6
+    
+    if tam == 1:
+        tma = 0.5
+    elif tam == 2:
+        tma = 0.3
+
+    wh = weight
+
+    return k, tma, wh
+
+def calc(k, tma, wh, hundred, density):
+
+    cai = (tma*k*wh*hundred)/density
+    return cai

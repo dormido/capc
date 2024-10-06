@@ -1,5 +1,5 @@
 import os, sys
-from functions import get_translations, data
+from functions import get_translations, data, calc
 def main():
     print("Selecciona el idioma:")
     print("1. Español\n2. Inglés\n3. Català")
@@ -24,6 +24,16 @@ def main():
     weight = float(input())
     print(messages["tam"])
     tam = int(input())
+
+    k, tma, wh = data(gender, weight, tam)  # Obtener k, tma y peso
+    
+    hundred = 100
+    density = 0.8
+    cai = calc(tma, k, wh, hundred, density)
+
+    # Imprime el resultado
+    print(cai)
+
 
 if __name__ == "__main__":
     main()
